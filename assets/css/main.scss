@@ -18,3 +18,18 @@ ul.author__urls li a[href="#"]:hover {
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+/* Make LinkedIn icon monochrome */
+.author__urls a[href*="linkedin"],
+.author__urls a[href*="linkedin"] i,
+footer a[href*="linkedin"],
+footer a[href*="linkedin"] i {
+  color: inherit !important;
+}
+
+.author__urls a[href*="linkedin"]:hover,
+.author__urls a[href*="linkedin"]:hover i,
+footer a[href*="linkedin"]:hover,
+footer a[href*="linkedin"]:hover i {
+  color: inherit !important;
+}
