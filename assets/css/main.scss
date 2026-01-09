@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 
 ---
@@ -8,10 +7,6 @@
 /* Custom styles - ultra specific */
 .sidebar .author__urls-wrapper .author__urls li a[href="#"],
 ul.author__urls li a[href="#"] {
-=======
-/* Custom styles for sidebar links */
-.author__urls a[href="#"] {
->>>>>>> a24de4fcf6a3999e26df29d58ce9434c0055c810
   text-decoration: none !important;
   cursor: default !important;
   pointer-events: none !important;
@@ -21,19 +16,5 @@ ul.author__urls li a[href="#"] {
 .sidebar .author__urls-wrapper .author__urls li a[href="#"]:hover,
 ul.author__urls li a[href="#"]:hover {
   text-decoration: none !important;
-<<<<<<< HEAD
   border-bottom: none !important;
-=======
-}
-
-/* Make LinkedIn icon monochrome */
-.author__urls a[href*="linkedin"],
-footer a[href*="linkedin"] {
-  color: inherit !important;
-}
-
-.author__urls a[href*="linkedin"]:hover,
-footer a[href*="linkedin"]:hover {
-  color: inherit !important;
->>>>>>> a24de4fcf6a3999e26df29d58ce9434c0055c810
 }
