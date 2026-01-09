@@ -1,8 +1,9 @@
 ---
 
 ---
-@import "minimal-mistakes";
 
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
 
 /* Custom styles - ultra specific */
 .sidebar .author__urls-wrapper .author__urls li a[href="#"],
