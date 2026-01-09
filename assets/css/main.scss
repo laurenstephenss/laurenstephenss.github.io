@@ -1,0 +1,17 @@
+---
+
+---
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+/* Custom styles for sidebar links */
+.author__urls a[href="#"] {
+  text-decoration: none !important;
+  cursor: default;
+  pointer-events: none;
+}
+
+.author__urls a[href="#"]:hover {
+  text-decoration: none !important;
+}
