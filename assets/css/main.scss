@@ -34,3 +34,53 @@ footer a[href*="linkedin"]:hover,
 footer a[href*="linkedin"]:hover i {
   color: inherit !important;
 }
+
+/* Course tags styling */
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.course-tag {
+  display: inline-block;
+  background-color: #0092ca;
+  color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  font-size: 0.65em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.page__title {
+  margin-bottom: 0.5em; /* Reduce space after "Education" title */
+}
+
+.page__content h2 {
+  margin-top: 0.5em; /* Reduce space above degree titles */
+  margin-bottom: 0.5em; /* Reduce space below degree titles */
+}
+
+/* Reduce space after bold text (like "Highlights:" and "Relevant Courses:") */
+.page__content p > strong {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.page__content p:has(strong) {
+  margin-bottom: 0.25em;
+}
+
+/* Reduce space before lists that come after bold headings */
+.page__content ul {
+  margin-top: 0.25em;
+}
+
+/* Reduce space before course tags */
+.course-tags {
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+}
