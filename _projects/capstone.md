@@ -3,9 +3,10 @@ title: "SpectraStream: Portable Kidney Health Monitor"
 excerpt: "**Engineering Capstone Project**"
 classes: wide
 author_profile: true
+order: 2
 header:
-  teaser: /assets/images/projects/capstone-pcbassembled.jpg
-  overlay_image: /assets/images/projects/capstone-pcbassembled.jpg
+  teaser: /assets/images/projects/capstone-pcbbare.jpg
+  overlay_image: /assets/images/projects/capstone-pcbbare.jpg
   overlay_filter: 0.5
 tags:
   - Biomedical Engineering
@@ -25,12 +26,12 @@ gallery_sensor:
 
 <div style="background-color: #f8f9fa; padding: 2em; border-radius: 8px; border-left: 4px solid #2c3e50; margin-bottom: 2em; margin-right: 2em">
   <h2 style="margin-top: 0; color: #2c3e50;">The Problem</h2>
-  <p style="font-size: 1.05em; line-height: 1.7;">Chronic kidney disease costs the Canadian healthcare system <strong>$40 billion annually</strong> and is a leading cause of death. Current diagnostics require expensive lab equipment, trained technicians, and complex procedures, which creates barriers to early detection when treatment is most effective. Symptoms often don't appear until irreversible kidney damage has occurred.</p>
+  <p style="font-size: 1.05em; line-height: 1.7;">Chronic kidney disease costs the Canadian healthcare system <b>$40 billion annually</b> and is a leading cause of death. Current diagnostics require expensive lab equipment, trained technicians, and complex procedures, which creates barriers to early detection when treatment is most effective. Symptoms often don't appear until irreversible kidney damage has occurred.</p>
 </div>
 
 <div style="background-color: #ecf0f1; padding: 2em; border-radius: 8px; border-left: 4px solid #34495e; margin-bottom: 2em;">
   <h2 style="margin-top: 0; color: #34495e;">The Solution</h2>
-  <p style="font-size: 1.05em; line-height: 1.7;">SpectraStream is a <strong>low-cost, accurate, portable spectrometer</strong> that uses miniaturized multispectral sensing to measure urinary creatinine levels. The device enables accurate at-home monitoring through simple chemical reaction analysis, replacing expensive lab-based tests with an accessible point-of-care solution.</p>
+  <p style="font-size: 1.05em; line-height: 1.7;">SpectraStream is a <b>low-cost, accurate, portable spectrometer</b> that uses miniaturized multispectral sensing to measure urinary creatinine levels. The device enables accurate at-home monitoring through simple chemical reaction analysis, replacing expensive lab-based tests with an accessible point-of-care solution.</p>
 </div>
 
 ---

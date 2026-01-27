@@ -5,6 +5,7 @@ collection: projects
 entries_layout: grid
 permalink: /projects/
 author_profile: true
+sort_by: order
 classes: wide
 ---
 

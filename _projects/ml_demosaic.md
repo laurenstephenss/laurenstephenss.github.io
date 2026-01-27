@@ -3,6 +3,7 @@ title: "Colour Demosaicing with Machine Learning "
 excerpt: "**Linear Regression for Digital Image Processing**"
 classes: wide
 author_profile: true
+order: 3
 header:
   teaser: /assets/images/projects/demosaic/colourful.jpg
   overlay_image: /assets/images/projects/demosaic/colourful.jpg
@@ -22,7 +23,7 @@ tags:
 
 <div style="background-color: #ecf0f1; padding: 2em; border-radius: 8px; border-left: 4px solid #34495e; margin-bottom: 2em;">
   <h2 style="margin-top: 0; color: #34495e;">The Solution</h2>
-  <p style="font-size: 1.05em; line-height: 1.7;">This project implements a <b>machine learning-based demosaicing algorithm</b> using linear regression to predict missing colour values. By training on 300,000 image patches from diverse scenes, the algorithm learns optimal coefficient matrices that leverage the correlation between neighbouring pixels and colour channels to reconstruct full-colour images.</p>
+  <p style="font-size: 1.05em; line-height: 1.7;">This project implements a <b>machine learning-based demosaicing algorithm</b> using linear regression to predict missing colour values. By training on over 300,000 image patches from diverse scenes, the algorithm learns optimal coefficient matrices that leverage the correlation between neighbouring pixels and colour channels to reconstruct full-colour images.</p>
 </div>
 
 ---
@@ -72,9 +73,8 @@ The linear regression model consistently outperformed MATLAB's built-in demosaic
 
 ## Background
 
-### The Bayer Pattern
-
-Modern digital cameras use a Colour Filter Array (CFA) where each pixel sensor is covered by a red, green, or blue filter. The most common arrangement is the Bayer pattern, which has twice as many green pixels as red or blue to match human visual sensitivity. This creates four distinct mosaic patterns depending on pixel position.
+<div style="margin: -1em 0 2em 0;">
+</div>
 
 ### The Bayer Pattern
 
@@ -172,6 +172,9 @@ For each pixel in a test image:
 ---
 
 ## Visual Comparison
+
+<div style="margin: -1em 0 2em 0;">
+</div>
 
 ### Staircase Test Image
 
@@ -279,7 +282,9 @@ The blurred background created smoother transitions, allowing both algorithms to
 
 ---
 
-**Course:** COMPENG 3SK3: Computer-Aided Engineering  
-**Instructor:** Dr. Xiaolin Wu  
-**Semester:** Winter 2023 | McMaster University  
+
+
 **Grade:** 110/100 (Bonus awarded for outperforming MATLAB's algorithm)
+
+
+**Course:** COMPENG 3SK3: Computer-Aided Engineering | McMaster University | January 2023 - April 2023
