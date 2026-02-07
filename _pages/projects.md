@@ -9,4 +9,4 @@ sort_by: order
 classes: wide
 ---
 
-A showcase of my technical projects spanning medical imaging, machine learning, biomedical instrumentation, and embedded systems design.
+A showcase of my academic, personal, and employment projects spanning medical imaging, machine learning, programming, and project management.

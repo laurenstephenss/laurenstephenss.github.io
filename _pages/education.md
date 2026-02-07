@@ -16,7 +16,7 @@ classes: wide
 Completed accelerated master’s program in 1 year, demonstrating time management, ability to master complex technical material rapidly, and capacity to handle intensive workloads
 
 **Highlights:**
-- [Thesis: Assessing Measurement Repeatability of a Novel Anisotropic Phantom for Higher Order Diffusion Tensor MRI Sequences](/projects/dti-phantom/) - Adapted software tools (Python, MATLAB, Bash) to provide a statistical methods to quantify measurement reliability across different scanning protocols
+- [Thesis: Assessing Measurement Repeatability of a Novel Anisotropic Phantom for Higher Order Diffusion Tensor MRI Sequences](/projects/masc-thesis/) - Adapted software tools (Python, MATLAB, Bash) to provide a statistical methods to quantify measurement reliability across different scanning protocols
 
 
 **Relevant Courses:**
@@ -38,9 +38,9 @@ Completed accelerated master’s program in 1 year, demonstrating time managemen
 Educated in the intersection of medicine and technology, capable of both understanding clinical problems and engineering the hardware and software solutions to address them.
 
 **Highlights:**
-- [Capstone Project](/projects/spectra-stream/) - Developed portable multispectral device for at-home kidney health monitoring
+- [Capstone Project](/projects/capstone/) - Developed portable multispectral device for at-home kidney health monitoring
 - [NSERC USRA](/experience/nserc/) recepient for Summer 2023
-- [Teaching Assistant](/experience/ta/) for 300+ student courses, bridging communication between students, instructors, and technical content
+- [Teaching Assistant](/experience/#teaching-assistant/) for 300+ student courses, bridging communication between students, instructors, and technical content
 - [Emergency First Response Team Member](/experience/efrt/) - Provided emergency medical response across campus
 
 

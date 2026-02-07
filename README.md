@@ -1,6 +1,6 @@
 # Lauren Stephens – Professional Portfolio
 
-Welcome! This site provides an overview of my experience, projects, and education. It was created using HTML+Ruby and based off the Jekyll Minimal Mistakes theme. 
+Welcome! This site provides an overview of my experience, projects, and education. It was created using HTML+CSS+Ruby and based off the Jekyll Minimal Mistakes theme. 
 
 ---
 
@@ -10,7 +10,7 @@ Explore my full portfolio online at [https://laurenstephenss.github.io/](https:/
 ---
 
 ## 💼 About Me
-I am a biomedical engineer with a strong interest in medical imaging, data analysis, and research innovation.
+I am a biomedical engineer with a strong interest in medical imaging, data analysis, and innovation in healthcare.
 
 ---
 

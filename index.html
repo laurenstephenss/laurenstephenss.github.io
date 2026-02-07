@@ -1,7 +1,570 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: single
 author_profile: true
+classes: wide
 ---
+
+<style>
+/* Carousel Section */
+.carousel-section {
+    margin: 2rem 0 3rem 0;
+}
+
+.carousel-section h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 50%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.featured-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+}
+
+.featured-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #f0f0f0;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.featured-image:hover {
+    opacity: 0.9;
+}
+
+.featured-content {
+    padding: 1.5rem;
+}
+
+.featured-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem !important;
+}
+
+.featured-description {
+    color: #666;
+    margin-bottom: -0.35rem;
+    line-height: 1.5;
+    font-size: 0.9rem !important;
+}
+
+.featured-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem !important;
+}
+
+.featured-link:hover {
+    text-decoration: underline;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.carousel-btn {
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.carousel-btn:hover:not(:disabled) {
+    background: #f0f0f0;
+    border-color: #999;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d0d0d0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #0066cc;
+    width: 12px;
+    height: 12px;
+}
+
+/* Skills Filter Section */
+.skills-filter-section {
+    margin: 3rem 0 2rem 0;
+}
+
+.skills-filter-section h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.skills-filter-box {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-label {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 0.85rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-tag {
+    padding: 0.4rem 0.9rem;
+    background: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+}
+
+.skill-tag:hover {
+    border-color: #999;
+}
+
+.skill-tag.active {
+    background: #0066cc;
+    color: white;
+    border-color: #0066cc;
+}
+
+.clear-filters-btn {
+    padding: 0.4rem 1rem;
+    background: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    display: none;
+}
+
+.clear-filters-btn.visible {
+    display: inline-block;
+}
+
+.clear-filters-btn:hover {
+    background: #f0f0f0;
+}
+
+.projects-grid {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.projects-grid.visible {
+    display: grid;
+}
+
+.project-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #f0f0f0;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.project-image:hover {
+    opacity: 0.9;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem !important;
+}
+
+.project-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 0.9rem !important;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-tag {
+    padding: 0.25rem 0.6rem;
+    background: #f5f5f5;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.project-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: #999;
+    display: none;
+}
+
+.no-results.visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .carousel-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .carousel-slide {
+        min-width: 100%;
+        padding: 0 1rem;
+    }
+}
+</style>
+
+<!-- Featured Posts Carousel -->
+<div class="carousel-section">
+    <h2>Featured Projects</h2>
+    <div class="carousel-container">
+        <div class="carousel-wrapper" id="carouselWrapper">
+            <!-- Carousel slides populated by JavaScript -->
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <button class="carousel-btn" id="prevBtn" onclick="prevSlide()">← Previous</button>
+        <button class="carousel-btn" id="nextBtn" onclick="nextSlide()">Next →</button>
+    </div>
+    <div class="carousel-indicators" id="indicators">
+        <!-- Indicators populated by JavaScript -->
+    </div>
+</div>
+
+<!-- Skills Filter Section -->
+<div class="skills-filter-section">
+    <h2>Explore All Projects</h2>
+    <div class="skills-filter-box">
+        <label class="skills-label">Filter by Skills</label>
+        <div class="skills-grid" id="skillsGrid">
+            <!-- Skills populated by JavaScript -->
+        </div>
+        <button class="clear-filters-btn" id="clearFilters">Clear Filters</button>
+    </div>
+</div>
+
+<!-- Projects Grid -->
+<div class="projects-grid" id="projectsGrid">
+    <!-- Projects populated by JavaScript -->
+</div>
+
+<div class="no-results" id="noResults">
+    No projects match the selected skills.
+</div>
+
+<script>
+// Project data - UPDATE THIS with your actual projects
+const projects = [
+        {
+        title: "Assessing Repeatability of a Diffusion Phantom",
+        description: "MASc thesis project developing Python-based analysis pipelines for evaluate advanced diffusion MRI models to determine repeatability of metrics through statistical analysis.",
+        image: "/assets/images/projects/masc/phantom_crop.png",
+        skills: ["Python", "Medical Imaging", "Project Management"],
+        link: "/projects/masc-thesis/",
+        featured: true
+    },
+    {
+        title: "SpectraStream: Portable Kidney Health Monitor",
+        description: "Engineering capstone project creating a portable spectrometer that uses miniaturized multispectral sensing to measure urinary creatinine levels for real-time kidney health monitoring.",
+        image: "/assets/images/projects/capstone-pcbbare.jpg",
+        skills: ["Electrical Engineering", "Biomedical Engineering", "Medical Devices", "Machine Learning", "Project Management"],
+        link: "/projects/capstone/",
+        featured: true
+    },
+    {
+        title: "Colour Demosaicing with Machine Learning",
+        description: "Implemented a machine learning-based demosaicing algorithm using linear regression to predict missing colour values, achieving better results than MATLAB's built-in function.",
+        image: "/assets/images/projects/demosaic/colourful.jpg",
+        skills: ["Machine Learning", "MATLAB"],
+        link: "/projects/ml-demosaic/",
+        featured: true
+    },
+    {
+        title: "Biosignal Acquisition & Analysis",
+        description: "Designed amplifying and filtering circuits with MATLAB signal processing algorithms for acquiring, isolating, and analyzing biological signals, including ECG, EMG, EEG, and EOG.",
+        image: "/assets/images/projects/biosignals/header.jpg",
+        skills: ["Biomedical Engineering", "Electrical Engineering", "MATLAB"],
+        link: "/projects/biosignal/",
+        featured: false
+    }
+];
+
+// Carousel state
+let currentSlide = 0;
+const featuredProjects = projects.filter(p => p.featured);
+
+// Extract all unique skills
+const allSkills = [...new Set(projects.flatMap(p => p.skills))].sort();
+
+// Track selected skills
+let selectedSkills = new Set();
+
+// Initialize
+function init() {
+    renderCarousel();
+    renderSkills();
+    renderProjects();
+    document.getElementById('clearFilters').addEventListener('click', clearFilters);
+}
+
+// Render carousel
+function renderCarousel() {
+    const wrapper = document.getElementById('carouselWrapper');
+    const indicators = document.getElementById('indicators');
+    
+    // Render slides
+    wrapper.innerHTML = featuredProjects.map(project => `
+        <div class="carousel-slide">
+            <div class="featured-card">
+                <a href="${project.link}">
+                    ${project.image ? `<img src="${project.image}" alt="${project.title}" class="featured-image">` : '<div class="featured-image"></div>'}
+                </a>
+                <div class="featured-content">
+                    <a href="${project.link}" style="text-decoration: none; color: inherit;">
+                        <h3 class="featured-title">${project.title}</h3>
+                    </a>
+                    <p class="featured-description">${project.description}</p>
+                    <a href="${project.link}" class="featured-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    // Render indicators
+    indicators.innerHTML = featuredProjects.map((_, index) => `
+        <div class="indicator ${index === 0 ? 'active' : ''}" onclick="goToSlide(${index})"></div>
+    `).join('');
+    
+    updateCarousel();
+}
+
+// Navigate carousel
+function nextSlide() {
+    if (currentSlide < featuredProjects.length - 2) {
+        currentSlide += 2;
+        if (currentSlide > featuredProjects.length - 2) {
+            currentSlide = featuredProjects.length - 2;
+        }
+    } else {
+        // Loop back to the beginning
+        currentSlide = 0;
+    }
+    updateCarousel();
+}
+
+function prevSlide() {
+    if (currentSlide > 0) {
+        currentSlide -= 2;
+        if (currentSlide < 0) {
+            currentSlide = 0;
+        }
+    } else {
+        // Loop to the end
+        currentSlide = Math.floor((featuredProjects.length - 1) / 2) * 2;
+    }
+    updateCarousel();
+}
+
+function goToSlide(index) {
+    // Adjust index to ensure we show pairs
+    currentSlide = Math.floor(index / 2) * 2;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const wrapper = document.getElementById('carouselWrapper');
+    wrapper.style.transform = `translateX(-${currentSlide * 50}%)`;
+    
+    // Update indicators
+    document.querySelectorAll('.indicator').forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide || index === currentSlide + 1);
+    });
+}
+
+// Render skill tags
+function renderSkills() {
+    const skillsGrid = document.getElementById('skillsGrid');
+    skillsGrid.innerHTML = allSkills.map(skill => `
+        <div class="skill-tag" data-skill="${skill}" onclick="toggleSkill('${skill}')">
+            ${skill}
+        </div>
+    `).join('');
+}
+
+// Toggle skill selection
+function toggleSkill(skill) {
+    if (selectedSkills.has(skill)) {
+        selectedSkills.delete(skill);
+    } else {
+        selectedSkills.add(skill);
+    }
+    updateUI();
+}
+
+// Clear all filters
+function clearFilters() {
+    selectedSkills.clear();
+    updateUI();
+}
+
+// Update UI
+function updateUI() {
+    // Update skill tags
+    document.querySelectorAll('.skill-tag').forEach(tag => {
+        const skill = tag.dataset.skill;
+        tag.classList.toggle('active', selectedSkills.has(skill));
+    });
+    renderProjects();
+}
+
+// Render projects
+function renderProjects() {
+    const projectsGrid = document.getElementById('projectsGrid');
+    const noResults = document.getElementById('noResults');
+    const clearButton = document.getElementById('clearFilters');
+    
+    // If no skills selected, hide everything
+    if (selectedSkills.size === 0) {
+        projectsGrid.classList.remove('visible');
+        clearButton.classList.remove('visible');
+        noResults.classList.remove('visible');
+        return;
+    }
+    
+    // Show clear button when skills are selected
+    clearButton.classList.add('visible');
+    
+    // Filter projects
+    let filteredProjects = projects.filter(project => 
+        [...selectedSkills].every(skill => project.skills.includes(skill))
+    );
+    
+    // Show/hide no results
+    if (filteredProjects.length === 0) {
+        noResults.classList.add('visible');
+        projectsGrid.classList.remove('visible');
+    } else {
+        noResults.classList.remove('visible');
+        projectsGrid.classList.add('visible');
+    }
+    
+    // Render cards
+    projectsGrid.innerHTML = filteredProjects.map(project => `
+        <div class="project-card">
+            <a href="${project.link}">
+                ${project.image ? `<img src="${project.image}" alt="${project.title}" class="project-image">` : '<div class="project-image"></div>'}
+            </a>
+            <div class="project-content">
+                <a href="${project.link}" style="text-decoration: none; color: inherit;">
+                    <h3 class="project-title">${project.title}</h3>
+                </a>
+                <p class="project-description">${project.description}</p>
+                <a href="${project.link}" class="project-link">View Project →</a>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Initialize on load
+init();
+</script>
