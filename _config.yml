@@ -9,6 +9,9 @@ minimal_mistakes_skin: default
 search: false
 # Build settings
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
+mathjax: true
 remote_theme: mmistakes/minimal-mistakes
 timezone: America/Toronto
 

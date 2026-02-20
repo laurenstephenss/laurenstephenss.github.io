@@ -1,12 +1,12 @@
 ---
-title: "Assessing Repeatability of a Novel Anisotropic Phantom"
+title: "Assessing Repeatability of a Diffusion Phantom"
 excerpt: "**MASc Thesis Project**"
 classes: wide
 author_profile: true
 order: 1
 header:
-  teaser: /assets/images/projects/thesis-phantom.jpg
-  overlay_image: /assets/images/projects/thesis-phantom.jpg
+  teaser: /assets/images/projects/masc/phantom_crop.png
+  overlay_image: /assets/images/projects/masc/phantom_crop.png
   overlay_filter: 0.5
 tags:
   - Biomedical Engineering
@@ -24,7 +24,46 @@ tags:
 
 <div style="background-color: #ecf0f1; padding: 2em; border-radius: 8px; border-left: 4px solid #34495e; margin-bottom: 2em;">
   <h2 style="margin-top: 0; color: #34495e;">The Solution</h2>
-  <p style="font-size: 1.05em; line-height: 1.7;">A novel anisotropic phantom containing synthetic fibre bundles with controlled geometries (linear, crossing, and branching) mimics white matter tracts in the brain. The phantom was scanned 11 times on a 3.0T GE MRI scanner using multiple acquisition protocols. A <b>Python-based analysis pipeline</b> performed automated ROI analysis and metric extraction. Repeatability was quantified using coefficient of variation (CoV) and intraclass correlation coefficient (ICC), establishing reliability benchmarks that inform quality assurance standards for clinical and research diffusion MRI.</p>
+  <p style="font-size: 1.05em; line-height: 1.7;">A <b>novel anisotropic phantom</b> containing synthetic fibre bundles with controlled geometries (linear, crossing, and branching) mimics white matter tracts in the brain. The phantom was scanned 11 times on a 3.0T GE MRI scanner using multiple acquisition protocols. A <b>Python-based analysis pipeline</b> performed automated ROI analysis and metric extraction. Repeatability was quantified using coefficient of variation (CoV) and intraclass correlation coefficient (ICC), establishing reliability benchmarks that inform quality assurance standards for clinical and research diffusion MRI.</p>
+</div>
+
+---
+
+## Publications & Presentations
+
+<!-- 
+<div style="background-color: #ffffff; padding: 1.5em 2em; border-radius: 8px; border: 2px solid #2c3e50; margin-bottom: 1.5em; display: flex; align-items: stretch; gap: 2em; flex-wrap: wrap;">
+  <div style="flex: 1 1 45%; min-width: 200px; min-height: 180px; background-color: #2c3e50; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 1em; box-sizing: border-box;">
+    <i class="fas fa-file-alt" style="font-size: 3.5em; margin-bottom: 0.4em;"></i>
+    <span style="font-size: 0.85em; line-height: 1.4;">Journal Paper</span>
+  </div>
+  <div style="flex: 1 1 45%; min-width: 200px;">
+    <div style="font-size: 0.75em; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em; color: #7f8c8d; margin-bottom: 0.4em;">📄 Publication</div>
+    <p style="margin: 0 0 0.6em 0; font-size: 0.95em; line-height: 1.6; color: #2c3e50;">
+      <strong>Stephens, L. H.</strong>, &amp; Noseworthy, M. D. (2025). Assessing repeatability of diffusion MRI metrics using a novel anisotropic fibre phantom. <em>Journal Name</em>, <em>Volume</em>(Issue), pages. <a href="https://doi.org/PLACEHOLDER" style="color: #2980b9;">https://doi.org/PLACEHOLDER</a>
+    </p>
+    <a href="https://doi.org/PLACEHOLDER" style="display: inline-block; background-color: #2c3e50; color: white; padding: 0.4em 1em; border-radius: 4px; text-decoration: none; font-size: 0.85em;">
+      <i class="fas fa-external-link-alt"></i> View Paper
+    </a>
+  </div>
+</div>
+-->
+
+<div style="background-color: #ffffff; padding: 1.5em 2em; border-radius: 8px; border: 2px solid #34495e; margin-bottom: 2em; display: flex; align-items: stretch; gap: 2em; flex-wrap: wrap;">
+  <div style="flex: 1 1 45%; min-width: 200px; display: flex; align-items: center;">
+    <img src="/assets/images/projects/masc/conference.jpg" alt="ESMRMB 2025 poster presentation" style="width: 100%; height: auto; object-fit: contain; border-radius: 6px; display: block;">
+  </div>
+  <div style="flex: 1 1 45%; min-width: 200px; display: flex; flex-direction: column; justify-content: center;">
+    <div style="font-size: 0.75em; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em; color: #7f8c8d; margin-bottom: 0.4em;">Conference Poster Presentation</div>
+    <p style="margin: 0 0 0.6em 0; font-size: 0.95em; line-height: 1.6; color: #2c3e50;">
+      Poster presented at the <em>European Society for Magnetic Resonance in Medicine and Biology Annual Meeting</em> (in Marseille, France on October 8-11, 2025).
+    </p>
+    <div>
+    <a href="https://doi.org/10.1007/s10334-025-01278-8" style="display: inline-block; background-color: #34495e; color: white; padding: 0.4em 1em; border-radius: 4px; text-decoration: none; font-size: 0.85em;">
+      <i class="fas fa-book-open"></i> Book of Abstracts
+    </a>
+    </div>
+  </div>
 </div>
 
 ---
@@ -109,7 +148,7 @@ Traditional DTI assumes water diffuses in a single primary direction per voxel, 
 - Longer scan times
 - More sophisticated analysis
 
-This thesis evaluated three diffusion models:
+**This thesis evaluated three diffusion models:**
 - **DTI** (Diffusion Tensor Imaging) - Standard model assuming single fibre direction per voxel
 - **DKI** (Diffusion Kurtosis Imaging) - Captures non-Gaussian diffusion behaviour
 - **CSD** (Constrained Spherical Deconvolution) - Resolves multiple crossing fibres
@@ -156,7 +195,7 @@ This thesis evaluated three diffusion models:
   <li><strong>30-direction DTI:</strong> Standard clinical protocol (b=1000 s/mm²)</li>
   <li><strong>60-direction HARDI:</strong> High angular resolution (b=1300 s/mm²)</li>
   <li><strong>90-direction HARDI:</strong> Very high angular resolution (b=1300 s/mm²)</li>
-  <li><strong>Multi-shell DKI:</strong> 30 directions at 8 b-values (250-3000 s/mm²)</li>
+  <li><strong>Multi-shell DKI:</strong> 30 directions at 8 b-values (b=250-3000 s/mm²)</li>
 </ul>
 </div>
 
@@ -172,63 +211,201 @@ This thesis evaluated three diffusion models:
 
 ---
 
-## Key Results
+## Results: Rank-2 Tensor Metrics
 
-### Conventional DTI Metrics: Excellent Repeatability
+These metrics showed high repeatability across all ROIs and scanning protocols. FA exhibited CoVs below 10% while MD, AD, and RD had CoVs below 3%. The overall trend shows CoV decreased and ICC increased when using HARDI acquisitions. All ICC values showed excellent reliability between scans (ICC > 0.9) when using the HARDI-90 protocol.
 
-DTI-derived metrics showed high repeatability across all regions:
+<table style="border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 1em 0; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white;" rowspan="2">Metric</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">DTI</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">HARDI-60</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">HARDI-90</th>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">CoV %</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">ICC</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">CoV %</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">ICC</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">CoV %</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">ICC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">FA</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">9.45</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9303</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">9.06</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9257</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">7.72</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9513</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">MD</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">2.06</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9336</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">1.95</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9401</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">1.89</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9474</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">AD</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">1.72</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.8154</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">1.51</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.8862</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">1.61</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9005</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">RD</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">2.40</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9431</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">2.32</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9543</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">2.45</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9474</td>
+    </tr>
+  </tbody>
+</table>
 
-| Metric | Average CoV | ICC | Reliability |
-|--------|-------------|-----|-------------|
-| **Fractional Anisotropy (FA)** | 8-9% | 0.92-0.94 | Excellent |
-| **Mean Diffusivity (MD)** | ~2% | 0.93-0.94 | Excellent |
-| **Axial Diffusivity (AD)** | 1.5-1.7% | 0.83-0.90 | Good to Excellent |
-| **Radial Diffusivity (RD)** | 2.5-2.6% | 0.94 | Excellent |
+---
 
-**Key Finding:** HARDI acquisitions (more gradient directions) generally improved repeatability over standard DTI, with the 90-direction protocol showing the best consistency.
+## Results: Higher Order Diffusion Metrics
 
-### Higher-Order DKI Metrics: Increased Variability
+DKI metrics displayed greater variability than their DTI analogs. KFA showed low CoV values and excellent ICC reliability. MK, AK, and RK showed higher variability, with values exceeding 30% in some ROIs. KFA and AK were classified as excellent reliability while MK and RK demonstrated good reliability.
 
-Diffusion kurtosis metrics showed greater sensitivity to scan-to-scan variation:
+<table style="border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 1em 0; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: left;">Metric</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">CoV %</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">ICC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">KFA</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">7.46</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9161</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">MK</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">16.02</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.8312</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">AK</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">12.89</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.9228</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">RK</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">19.24</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.8423</td>
+    </tr>
+  </tbody>
+</table>
 
-| Metric | Average CoV | ICC | Reliability |
-|--------|-------------|-----|-------------|
-| **Kurtosis FA (KFA)** | 7.4% | 0.94 | Excellent |
-| **Mean Kurtosis (MK)** | 15% | 0.84 | Good |
-| **Axial Kurtosis (AK)** | 14% | 0.92 | Excellent |
-| **Radial Kurtosis (RK)** | 18.6% | 0.83 | Good |
+GFA showed a clear increase in reliability with angular resolution. CoV values remained low even with only 30 gradient directions.
 
-**Key Finding:** Kurtosis metrics were more variable in regions with crossing fibres and branching geometry, with CoV exceeding 30% in some complex regions. This suggests these metrics may be less stable for quality assurance purposes.
+<table style="border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 1em 0; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white;" rowspan="2">Metric</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">DTI</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">HARDI-60</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">HARDI-90</th>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">CoV %</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">ICC</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">CoV %</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">ICC</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">CoV %</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">ICC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">GFA</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">6.37</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.6920</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">4.07</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.8122</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">4.16</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.8445</td>
+    </tr>
+  </tbody>
+</table>
 
-### CSD Model: Resolution Improves with Angular Sampling
+---
 
-Generalized fractional anisotropy (GFA) from CSD showed clear improvement with higher angular resolution:
+## Results: CSD Crossing Angles
 
-| Protocol | Average CoV | ICC | Reliability |
-|----------|-------------|-----|-------------|
-| **DTI (30 directions)** | 6.7% | 0.66 | Moderate |
-| **HARDI-60** | 4.4% | 0.80 | Good |
-| **HARDI-90** | 5.0% | 0.85 | Good |
+The ability of CSD to resolve multiple fibre orientations varied with angular separation. At 30°, CSD failed to resolve discrete fibre directions, instead producing single-peak fODFs.
 
-**Key Finding:** The ICC increased substantially from DTI to HARDI protocols, indicating better differentiation between regions with distinct fibre geometries. Visual inspection of fibre orientation distributions confirmed successful resolution of 45° and 90° crossings, but failure to resolve the shallow 30° crossing.
+<table style="border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 1em 0; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: left;">Method</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">90°</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">45°</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #2c3e50; color: white; text-align: center;" colspan="2">30°</th>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white;"></th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">Avg</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">RMSE</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">Avg</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">RMSE</th>
+      <th style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">Avg</th>
+      <th style="border: 1px solid #ccc; padding: 0.5em 1em; background-color: #34495e; color: white; text-align: center;">RMSE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">T1w reference</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">89.59°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">0.47</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">47.26°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">1.76</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">29.72°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">1.40</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">CSD Crossing Angle</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">87.10°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">3.49</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">50.07°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">8.92</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">—</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">—</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; font-weight: bold;">CSD Approach Angle</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">89.39°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">4.08</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">43.29°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">3.61</td>
+      <td style="border: 1px solid #ccc; border-left: 3px solid #ccc; padding: 0.5em 1em; text-align: center;">27.67°</td>
+      <td style="border: 1px solid #ccc; padding: 0.5em 1em; text-align: center;">3.63</td>
+    </tr>
+  </tbody>
+</table>
 
-### Scanner Stability: Highly Consistent
+---
 
-Quality control measurements confirmed minimal hardware drift:
-- **Static field (ΔB₀):** Mean = -6.84 Hz, SD = 6.63 Hz
-- **Transmit field (B₁⁺):** Mean = 211.35 µT, SD = 1.58 µT  
-- **Signal-to-noise ratio:** Mean = 97.83, SD = 7.03
-- **Isotropic ADC module:** CoV = 1.83%
+## Discussion & Conclusions
 
-These results confirm that observed metric variability reflects model characteristics rather than scanner instability.
+Results demonstrate that the PreOperative Performance phantom is a reliable and effective tool for evaluating the repeatability of advanced diffusion MRI metrics. Results align well with findings from earlier studies using anisotropic phantoms. Published literature reports CoV of 7–29% for FA and 2–6% for MD. Future work should extend to assess inter-scanner and inter-vendor variability, or evaluate multiple PreOperative Performance phantoms with different internal configurations.
 
 ---
 
 ## Key Learnings
-
-**<i class="fas fa-chart-line"></i> Model-Dependent Reliability**
-
-Not all diffusion metrics are equally repeatable. Conventional DTI metrics (FA, MD, AD, RD) demonstrated excellent scan-to-scan consistency, making them suitable for longitudinal studies and quality assurance. Higher-order kurtosis metrics, while providing additional microstructural information, showed 2-3× higher variability and should be interpreted with caution in clinical applications.
 
 **<i class="fas fa-network-wired"></i> Importance of Acquisition Design**
 
@@ -241,19 +418,6 @@ This work demonstrated that anisotropic phantoms with controlled fibre geometrie
 **<i class="fas fa-code"></i> Open-Source Tools Enable Reproducible Research**
 
 The entire analysis pipeline was built using open-source tools (DIPY, FSL, Python scientific libraries), ensuring transparency and reproducibility. All preprocessing, model fitting, and statistical analysis code was documented and version-controlled, supporting the growing movement toward open science in neuroimaging research.
-
----
-
-## Clinical and Research Impact
-
-This work addresses a critical gap in diffusion MRI validation by:
-
-1. **Establishing repeatability benchmarks** for advanced diffusion models that can inform quality thresholds in clinical trials
-2. **Demonstrating the phantom's utility** for routine scanner quality assurance and protocol optimization
-3. **Providing evidence** for which metrics are sufficiently stable for detecting longitudinal changes in patient populations
-4. **Contributing to standardization efforts** needed for multi-site neuroimaging studies
-
-The findings suggest that while advanced diffusion models offer richer microstructural information, their increased variability must be carefully considered when designing studies or interpreting clinical results. Conventional DTI metrics remain the most reliable choice when measurement stability is paramount.
 
 ---
 
@@ -406,18 +570,18 @@ The findings suggest that while advanced diffusion models offer richer microstru
 
 <div class="image-gallery">
   <div class="image-gallery-item" onclick="openLightbox(0)">
-    <img src="/assets/images/projects/thesis-roi-locations.png" alt="Six regions of interest with different fibre geometries">
+    <img src="/assets/images/projects/masc/FA_colour.png" alt="FA map with colour coded directions">
   </div>
   <div class="image-gallery-item" onclick="openLightbox(1)">
-    <img src="/assets/images/projects/thesis-fodf-45crossing.png" alt="Fibre orientation distribution showing 45° crossing">
+    <img src="/assets/images/projects/masc/B0_B1_map.png" alt="B0 and B1 field map">
   </div>
   <div class="image-gallery-item" onclick="openLightbox(2)">
-    <img src="/assets/images/projects/thesis-fodf-branching.png" alt="Three-way fibre branching resolved by CSD">
+    <img src="/assets/images/projects/masc/ROI_4_full.png" alt="90 degree crossing fibre fODF">
   </div>
   <div class="image-gallery-item" onclick="openLightbox(3)">
-    <img src="/assets/images/projects/thesis-fa-boxplots.png" alt="FA repeatability across protocols">
+    <img src="/assets/images/projects/masc/FA_HARDI_90_boxplot.png" alt="Boxplot of FA values">
     <div class="more-images-overlay">
-      +4
+      +2
       <div class="more-images-text">more images</div>
     </div>
   </div>
@@ -434,38 +598,31 @@ The findings suggest that while advanced diffusion models offer richer microstru
 
 <script>
 let currentIndex = 0;
+
 const galleryImages = [
   {
-    src: '/assets/images/projects/thesis-roi-locations.png',
-    caption: 'Six regions of interest with different fibre geometries: crossings at 30°, 45°, 90°, branching, linear, and isotropic'
+    src: '/assets/images/projects/masc/FA_colour.png',
+    caption: 'Colour-coded fractional anisotropy map where FA modulates brightness and colours indicate direction as follows: red, left-right; green, anterior-posterior; blue, superior-inferior'
   },
   {
-    src: '/assets/images/projects/thesis-fodf-45crossing.png',
-    caption: 'Fibre orientation distribution functions showing successful resolution of 45° fibre crossing (detected angle: 49.8°)'
+    src: '/assets/images/projects/masc/B0_B1_map.png',
+    caption: 'B₀ and B₁⁺ field maps used to assess scanner stability and field homogeneity across imaging sessions'
   },
   {
-    src: '/assets/images/projects/thesis-fodf-branching.png',
-    caption: 'Three-way fibre branching with out-of-plane component successfully resolved by constrained spherical deconvolution'
+    src: '/assets/images/projects/masc/ROI_4_full.png',
+    caption: 'ROI 4: fODF of 90 degree fibre branching region'
   },
   {
-    src: '/assets/images/projects/thesis-fa-boxplots.png',
-    caption: 'Fractional anisotropy repeatability across DTI, HARDI-60, and HARDI-90 protocols'
+    src: '/assets/images/projects/masc/FA_HARDI_90_boxplot.png',
+    caption: 'Fractional anisotropy repeatability across all ROIs using the HARDI-90 acquisition protocol'
   },
   {
-    src: '/assets/images/projects/thesis-kurtosis-boxplots.png',
-    caption: 'Diffusion kurtosis metrics showing increased variability compared to conventional DTI'
+    src: '/assets/images/projects/masc/MD_HARDI_90_boxplot.png',
+    caption: 'Mean diffusivity repeatability across all ROIs using the HARDI-90 acquisition protocol'
   },
   {
-    src: '/assets/images/projects/thesis-gfa-boxplots.png',
-    caption: 'Generalized fractional anisotropy improving with higher angular resolution sampling'
-  },
-  {
-    src: '/assets/images/projects/thesis-scanner-stability.png',
-    caption: 'Scanner stability monitoring: B₀ and B₁⁺ field homogeneity and SNR consistency across trials'
-  },
-  {
-    src: '/assets/images/projects/thesis-analysis-pipeline.png',
-    caption: 'Complete data analysis pipeline from raw DICOM to statistical repeatability metrics'
+    src: '/assets/images/projects/masc/RK_DKI_boxplot.png',
+    caption: 'Radial kurtosis repeatability across all ROIs from the multi-shell DKI acquisition'
   }
 ];
 
@@ -504,7 +661,7 @@ document.addEventListener('keydown', function(e) {
 });
 </script>
 
-<p style="text-align: center; color: #7f8c8d; font-size: 0.9em; margin-top: 0.5em;">Results visualization, ROI analysis, and fibre orientation distributions • Click to view all 8 images</p>
+<p style="text-align: center; color: #7f8c8d; font-size: 0.9em; margin-top: 0.5em;">Results visualization and fibre orientation distributions • Click to view all 6 images</p>
 
 ---
 
@@ -514,20 +671,20 @@ document.addEventListener('keydown', function(e) {
   <a href="/assets/docs/Stephens_Lauren_H_2025May_MASc.pdf" style="text-decoration: none;">
     <div style="background-color: #f8f9fa; padding: 1.5em; border-radius: 8px; text-align: center; border: 2px solid #2c3e50;">
       <i class="fas fa-file-pdf" style="font-size: 2em; color: #2c3e50;"></i>
-      <div style="margin-top: 0.5em; font-weight: bold; color: #2c3e50;">Full Thesis</div>
-      <div style="font-size: 0.9em; color: #7f8c8d;">114-page MASc thesis</div>
+      <div style="margin-top: 0.5em; font-weight: bold; color: #2c3e50;">Thesis PDF</div>
+      <div style="font-size: 0.9em; color: #7f8c8d;">Full MASc thesis</div>
     </div>
   </a>
-  <a href="https://github.com/[your-username]/diffusion-phantom-analysis" style="text-decoration: none;">
+  <a href="https://github.com/laurenstephenss/MASc_analysis" style="text-decoration: none;">
     <div style="background-color: #f8f9fa; padding: 1.5em; border-radius: 8px; text-align: center; border: 2px solid #34495e;">
       <i class="fab fa-github" style="font-size: 2em; color: #34495e;"></i>
       <div style="margin-top: 0.5em; font-weight: bold; color: #34495e;">Analysis Code</div>
-      <div style="font-size: 0.9em; color: #7f8c8d;">Python pipeline (DIPY/FSL)</div>
+      <div style="font-size: 0.9em; color: #7f8c8d;">Python pipeline</div>
     </div>
   </a>
-  <a href="/assets/docs/thesis-presentation.pdf" style="text-decoration: none;">
+  <a href="/assets/docs/Thesis_Defense_Slides.pdf" style="text-decoration: none;">
     <div style="background-color: #f8f9fa; padding: 1.5em; border-radius: 8px; text-align: center; border: 2px solid #2c3e50;">
-      <i class="fas fa-presentation" style="font-size: 2em; color: #2c3e50;"></i>
+      <i class="fas fa-file-powerpoint" style="font-size: 2em; color: #2c3e50;"></i>
       <div style="margin-top: 0.5em; font-weight: bold; color: #2c3e50;">Defense Slides</div>
       <div style="font-size: 0.9em; color: #7f8c8d;">Thesis presentation</div>
     </div>

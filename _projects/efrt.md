@@ -231,7 +231,7 @@ const galleryImages = [
     caption: 'Responder of the year award'
   },
   {
-    src: '/assets/images/projects/efrt/efrt-fun.jpg',
+    src: '/assets/images/projects/efrt/efrt-fun.JPG',
     caption: 'Photo taken for PR use'
   },
   {
